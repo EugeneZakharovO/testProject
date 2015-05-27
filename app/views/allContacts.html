@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <button class="btn btn-info center-block" ng-click="addNewContact();">Add new contact</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="contact in contacts" ng-click="openContactDetails(contact);">{{contact | fullName}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="contactDetailsModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div contact-details="currentContact"></div>
+        </div>
+    </div>
+</div>
