@@ -23,5 +23,6 @@ angular
       }
     ])
     .run([
-      function () {}
+      function () {
+      }
     ]);
